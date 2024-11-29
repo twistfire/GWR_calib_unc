@@ -63,7 +63,7 @@ def calculate_Ps(T_K):
     return Ps_mmHg, Ps_kPa
 
 
-def calculate_eps_air_with_uncertainty(RH, T, P, delta_RH, delta_T, delta_P):
+def calculate_rel_eps_with_uncertainty(RH, T, P, delta_RH, delta_T, delta_P):
     """
     Calculate ε_air and its uncertainty using propagation of uncertainty.
 
