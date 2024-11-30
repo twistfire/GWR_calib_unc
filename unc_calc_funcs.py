@@ -138,3 +138,10 @@ def calculate_dPs_dT(T_K):
     dPs_dT_mmHg = dPs_dT_kPa * 7.50062  # Convert from kPa to mmHg
 
     return dPs_dT_mmHg
+
+
+def calc_level_by_time_eps(time: float,
+                           eps: float,
+                           c: float = 3e8):
+    distance = c/np.sqrt(eps) * time / 2
+    return distance
